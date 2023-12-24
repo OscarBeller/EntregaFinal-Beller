@@ -1,0 +1,1328 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap");
+.boton_producto_index, body .index main .container_productos .producto_apple .boton_producto {
+  padding: 0.625rem 0rem;
+  padding: 0.625rem 0.625rem;
+  border: 0.0625rem solid #fff;
+  border-radius: 0.625rem;
+  width: 5.625rem;
+  text-align: center;
+  transition: all 0.3s;
+  margin-top: 0.625rem;
+}
+.cr{
+  color: #fff;
+  font: 1em sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  animation: transitionIn 0.75s;
+}
+
+
+body {
+  background-color: #777777;
+}
+
+.index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.25rem 1fr 11.5rem;
+}
+
+.productos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.25rem 1fr 11.5rem;
+}
+
+.nosotros {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.25rem 1fr 11.5rem;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.25rem 1fr 11.5rem;
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.25rem 1fr 11.5rem;
+}
+
+.carrito {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.25rem 1fr 11.5rem;
+}
+
+body .index header .container_header,
+body .productos header .container_header,
+body .galeria header .container_header,
+body .nosotros header .container_header,
+body .contacto header .container_header,
+body .carrito header .container_header {
+  width: 100%;
+  height: 6.25rem;
+  background-color: #15915d;
+  align-items: center;
+  position: relative;
+  z-index: 100000;
+}
+body .index header .container_header nav,
+body .productos header .container_header nav,
+body .galeria header .container_header nav,
+body .nosotros header .container_header nav,
+body .contacto header .container_header nav,
+body .carrito header .container_header nav {
+  height: 6.25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+}
+body .index header .container_header nav .logomate img,
+body .productos header .container_header nav .logomate img,
+body .galeria header .container_header nav .logomate img,
+body .nosotros header .container_header nav .logomate img,
+body .contacto header .container_header nav .logomate img,
+body .carrito header .container_header nav .logomate img {
+  width: 7rem;
+  margin-left: 25px;
+}
+body .index header .container_header nav .bar-btn,
+body .productos header .container_header nav .bar-btn,
+body .galeria header .container_header nav .bar-btn,
+body .nosotros header .container_header nav .bar-btn,
+body .contacto header .container_header nav .bar-btn,
+body .carrito header .container_header nav .bar-btn {
+  font-size: 1.5625rem;
+  color: #fff;
+  margin-right: 1.8rem;
+  cursor: pointer;
+}
+body .index header .container_header nav .bar-btn i,
+body .productos header .container_header nav .bar-btn i,
+body .galeria header .container_header nav .bar-btn i,
+body .nosotros header .container_header nav .bar-btn i,
+body .contacto header .container_header nav .bar-btn i,
+body .carrito header .container_header nav .bar-btn i {
+  color: #fff;
+}
+body .index header .container_header nav .nav-menu,
+body .productos header .container_header nav .nav-menu,
+body .galeria header .container_header nav .nav-menu,
+body .nosotros header .container_header nav .nav-menu,
+body .contacto header .container_header nav .nav-menu,
+body .carrito header .container_header nav .nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 6.25rem;
+  background: #fff;
+  text-align: center;
+  padding-left: 0rem;
+}
+body .index header .container_header nav .nav-menu li,
+body .productos header .container_header nav .nav-menu li,
+body .galeria header .container_header nav .nav-menu li,
+body .nosotros header .container_header nav .nav-menu li,
+body .contacto header .container_header nav .nav-menu li,
+body .carrito header .container_header nav .nav-menu li {
+  list-style: none;
+  display: none;
+  line-height: 1.875rem;
+  margin: 3.125rem 0rem;
+}
+body .index header .container_header nav .nav-menu li a,
+body .productos header .container_header nav .nav-menu li a,
+body .galeria header .container_header nav .nav-menu li a,
+body .nosotros header .container_header nav .nav-menu li a,
+body .contacto header .container_header nav .nav-menu li a,
+body .carrito header .container_header nav .nav-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+body .index header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco,
+body .productos header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco,
+body .galeria header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco,
+body .nosotros header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco,
+body .contacto header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco,
+body .carrito header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco {
+  display: none;
+  width: 40px;
+  position: absolute;
+  right: -14px;
+}
+body .index header .container_header nav .nav-menu .contenedor_carrito p,
+body .productos header .container_header nav .nav-menu .contenedor_carrito p,
+body .galeria header .container_header nav .nav-menu .contenedor_carrito p,
+body .nosotros header .container_header nav .nav-menu .contenedor_carrito p,
+body .contacto header .container_header nav .nav-menu .contenedor_carrito p,
+body .carrito header .container_header nav .nav-menu .contenedor_carrito p {
+  color: black;
+  position: relative;
+  font-size: 20px;
+  background-color: white;
+  padding: 0px 5px;
+  left: 40px;
+  top: 20px;
+  border-radius: 10px;
+}
+body .index header .container_header nav .nav-menu .contenedor_carrito .carrito-negro,
+body .productos header .container_header nav .nav-menu .contenedor_carrito .carrito-negro,
+body .galeria header .container_header nav .nav-menu .contenedor_carrito .carrito-negro,
+body .nosotros header .container_header nav .nav-menu .contenedor_carrito .carrito-negro,
+body .contacto header .container_header nav .nav-menu .contenedor_carrito .carrito-negro,
+body .carrito header .container_header nav .nav-menu .contenedor_carrito .carrito-negro {
+  width: 40px;
+}
+body .index header .container_header nav .nav-menu .contenedor_carrito p,
+body .productos header .container_header nav .nav-menu .contenedor_carrito p,
+body .galeria header .container_header nav .nav-menu .contenedor_carrito p,
+body .nosotros header .container_header nav .nav-menu .contenedor_carrito p,
+body .contacto header .container_header nav .nav-menu .contenedor_carrito p,
+body .carrito header .container_header nav .nav-menu .contenedor_carrito p {
+  color: white;
+  width: 26px;
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  background-color: black;
+  padding: 0px 5px;
+  border-radius: 10px;
+  left: -14px;
+}
+
+nav-menu li a.active, .nav-menu li a:hover {
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .nav-menu {
+  height: 100vh;
+  transition: all 0.3s;
+}
+
+#check:checked ~ .nav-menu li {
+  display: block;
+}
+
+body .index header .contenedor_carrito {
+  margin-left: 15px;
+}
+body .index header .contenedor_carrito .carrito {
+  bottom: 35px;
+}
+body .index main .container_categorias {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 3.125rem 0.625rem;
+}
+body .index main .container_categorias .categoria_yerbas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+  font-size: 1.125rem;
+  border-radius: 0.625rem;
+  padding: 0.625rem 0rem 0.625rem 0.625rem;
+  transition: all 0.3s;
+  width: 83%;
+  box-shadow: 0rem 0rem 0.625rem #fff;
+}
+body .index main .container_categorias .categoria_yerbas a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.625rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body .index main .container_categorias .categoria_yerbas a h3 {
+  color: #fff;
+  margin-bottom: 0rem;
+}
+body .index main .container_categorias .categoria_yerbas:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+body .index main .container_categorias .categoria_mates {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+  font-size: 1.125rem;
+  border-radius: 0.625rem;
+  padding: 0.625rem 0rem 0.625rem 0.625rem;
+  transition: all 0.3s;
+  width: 83%;
+  box-shadow: 0rem 0rem 0.625rem #fff;
+}
+body .index main .container_categorias .categoria_mates a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: center;
+  gap: 0.625rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body .index main .container_categorias .categoria_mates a h3 {
+  color: #fff;
+  margin-bottom: 0rem;
+}
+body .index main .container_categorias .categoria_mates:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+body .index main .container_categorias .categoria_accesorios {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+  font-size: 1.125rem;
+  border-radius: 0.625rem;
+  padding: 0.625rem 0rem 0.625rem 0.625rem;
+  transition: all 0.3s;
+  width: 83%;
+  box-shadow: 0rem 0rem 0.625rem #fff;
+}
+body .index main .container_categorias .categoria_accesorios a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: center;
+  gap: 0.625rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body .index main .container_categorias .categoria_accesorios a h3 {
+  color: #fff;
+  margin-bottom: 0rem;
+}
+body .index main .container_categorias .categoria_accesorios:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+body .index main .container_productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.25rem;
+  margin: 0rem 0rem 2.5rem 1.875rem;
+  transition: all 0.3s;
+}
+body .index main .container_productos .producto_apple {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+  transition: all 0.3s;
+  margin-left: 1.25rem;
+}
+body .index main .container_productos .producto_apple h3 {
+  margin-bottom: 0rem;
+  transition: all 0.3s;
+  color: #fff;
+}
+body .index main .container_productos .producto_apple p {
+  color: grey;
+  margin-bottom: 0rem;
+  transition: all 0.3s;
+}
+body .index main .container_productos .producto_apple img {
+  width: 13.125rem;
+  margin: 0.4375rem 0rem;
+  transition: all 0.3s;
+}
+body .index main .container_productos .producto_apple .boton_producto a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+body .index main .container_productos .producto_apple .boton_producto:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.1);
+}
+body .index main .container_fotografia {
+  width: 100%;
+  margin: 1.875rem 0rem;
+  transition: all 0.3s;
+}
+body .index main .container_fotografia h2 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  padding: 0.625rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+}
+body .index main .container_fotografia .nikon {
+  width: 100%;
+  height: 6.25rem;
+  background-image: url(../img/Inicio/nikon.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position-y: 26%;
+  text-align: center;
+  border: 0.125rem solid #fff;
+  margin-bottom: 0.1875rem;
+}
+body .index main .container_fotografia .nikon .fondo_nikon {
+  background-color: rgba(0, 0, 0, 0.462);
+  width: 100%;
+  height: 6.25rem;
+}
+body .index main .container_fotografia .nikon .fondo_nikon a {
+  background-color: rgba(0, 0, 0, 0.861);
+  color: #fff;
+  padding: 0.5rem 1.875rem;
+  border-radius: 1.25rem;
+  border: 0.0625rem solid #fff;
+  font-size: 1.25rem;
+  position: relative;
+  top: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body .index main .container_fotografia .nikon .fondo_nikon a:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.5);
+}
+body .index main .container_fotografia .canon {
+  width: 100%;
+  height: 6.25rem;
+  background-image: url(../img/Inicio/canon.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position-y: 30%;
+  text-align: center;
+  border: 0.125rem solid #fff;
+  margin-bottom: 0.1875rem;
+}
+body .index main .container_fotografia .canon .fondo_canon {
+  background-color: rgba(255, 165, 29, 0.368627451);
+  width: 100%;
+  height: 6.25rem;
+}
+body .index main .container_fotografia .canon .fondo_canon a {
+  background-color: rgba(0, 0, 0, 0.861);
+  color: #fff;
+  padding: 0.5rem 1.875rem;
+  border-radius: 1.25rem;
+  border: 0.0625rem solid #fff;
+  font-size: 1.25rem;
+  position: relative;
+  top: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body .index main .container_fotografia .canon .fondo_canon a:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.5);
+}
+body .index main .container_fotografia .sony {
+  width: 100%;
+  height: 6.25rem;
+  background-image: url(../img/Inicio/sony.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position-y: 37%;
+  text-align: center;
+  border: 0.125rem solid #fff;
+}
+body .index main .container_fotografia .sony .fondo_sony {
+  background-color: rgba(0, 0, 0, 0.462);
+  width: 100%;
+  height: 6.25rem;
+}
+body .index main .container_fotografia .sony .fondo_sony a {
+  background-color: rgba(0, 0, 0, 0.861);
+  color: #fff;
+  padding: 0.5rem 1.875rem;
+  border-radius: 1.25rem;
+  border: 0.0625rem solid #fff;
+  font-size: 1.25rem;
+  position: relative;
+  top: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body .index main .container_fotografia .sony .fondo_sony a:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.5);
+}
+
+body .productos main .titulo_productos {
+  text-align: center;
+  margin: 0.625rem 0rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  color: #fff;
+}
+body .productos main .container_marcas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 1.875rem 3rem;
+}
+body .productos main .container_marcas .categoria-boton {
+  border-radius: 50%;
+  border: transparent;
+  background-color: transparent;
+  box-shadow: 0rem 0rem 0.625rem #fff;
+}
+body .productos main .container_marcas .categoria-boton img {
+  width: 3.75rem;
+  border-radius: 50%;
+  border: 0.0625rem solid #000;
+}
+body .productos main .container_marcas .categoria-boton:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+body .productos main .contenedor_productos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: none;
+  gap: 1.875rem;
+  margin: 2.8125rem 0.625rem 1.5625rem 0rem;
+}
+body .productos main .contenedor_productos .producto {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body .productos main .contenedor_productos .producto .imagen_producto {
+  border-radius: 5px;
+}
+body .productos main .contenedor_productos .producto .producto_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+body .productos main .contenedor_productos .producto .producto_body button {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 6px;
+  color: white;
+  background-color: transparent;
+}
+body .productos main .contenedor_productos .producto .producto_body button:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+body .productos main .contenedor_productos div {
+  width: 15rem;
+}
+body .productos main .contenedor_productos div a:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+body .productos main .subtitulo_producto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 0.625rem;
+  box-shadow: 0rem 0rem 0.625rem #fff;
+}
+body .productos main .subtitulo_producto h2 {
+  margin-bottom: 0rem;
+  margin-left: 0.625rem;
+}
+body .productos main .subtitulo_producto a img {
+  width: 3.125rem;
+  margin-right: 0.625rem;
+}
+
+body .galeria header .contenedor_carrito .carrito {
+  bottom: 35px;
+}
+body .galeria main .titulo_galeria {
+  text-align: center;
+  margin: 1.875rem 0rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+body .galeria main .container_fotos_galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: none;
+  gap: 1.625rem;
+  margin-bottom: 3.125rem;
+}
+body .galeria main .container_fotos_galeria img {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  width: 17rem;
+}
+
+body .nosotros header .contenedor_carrito .carrito {
+  bottom: 35px;
+}
+body .nosotros .main_nosotros section .titulo_nosotros {
+  text-align: center;
+  margin: 1.625rem 0rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+body .nosotros .main_nosotros section .texto_nosotros {
+  margin: 0.625rem 1.875rem;
+  font-family: "Roboto", sans-serif;
+  padding: 0rem 0.5625rem;
+  color: #fff;
+  font-size: 1.125rem;
+}
+body .nosotros .main_nosotros section .texto_nosotros h2 {
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+body .nosotros .main_nosotros section .texto_nosotros span {
+  font-weight: bold;
+}
+
+body header .contenedor_carrito .carrito {
+  bottom: 35px;
+}
+body .main_contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .main_contacto .titulo_contacto {
+  text-align: center;
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+body .main_contacto .redes_contacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: none;
+  gap: 1.25rem;
+  margin: 1.875rem 0rem 2.5rem 0rem;
+}
+body .main_contacto .redes_contacto a img {
+  width: 3.125rem;
+}
+body .main_contacto .container_formulario {
+  margin: 3.125rem 0rem;
+}
+body .main_contacto .container_formulario .formulario_contacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 0rem 1.25rem 0rem 1.25rem;
+  transition: all 0.3s;
+}
+body .main_contacto .container_formulario .formulario_contacto .nombre_apellido_email {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: 1.3125rem;
+  transition: all 0.3s;
+}
+body .main_contacto .container_formulario .formulario_contacto .nombre_apellido_email input {
+  font-family: "Roboto", sans-serif;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #000;
+  padding: 0.625rem 6.6rem 0.5rem 0.3125rem;
+  transition: all 0.3s;
+}
+body .main_contacto .container_formulario .formulario_contacto .textarea {
+  resize: none;
+  font-family: "Roboto", sans-serif;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #000;
+  max-width: 17.5rem;
+  transition: all 0.3s;
+}
+body .main_contacto .container_formulario .formulario_contacto .textarea::placeholder {
+  padding: 0.3125rem 0.3125rem;
+}
+body .main_contacto .container_formulario .formulario_contacto .boton_formulario:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+body .main_contacto .mail_ubicacion {
+  margin-bottom: 2.5rem;
+}
+body .main_contacto .mail_ubicacion .email {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: none;
+  gap: 0.3125rem;
+  text-align: center;
+}
+body .main_contacto .mail_ubicacion .email p {
+  font-size: 1.25rem;
+}
+body .main_contacto .mail_ubicacion .email a img {
+  width: 2.5rem;
+}
+body .main_contacto .mail_ubicacion .ubicacion {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: none;
+  gap: 0.3125rem;
+  text-align: center;
+}
+body .main_contacto .mail_ubicacion .ubicacion p {
+  font-size: 1.25rem;
+}
+body .main_contacto .mail_ubicacion .ubicacion a img {
+  width: 2.5rem;
+}
+body .main_contacto .mapa {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+body main .contenedor_titulo h1 {
+  color: white;
+  text-align: center;
+  margin: 50px 0px 30px 0px;
+}
+body main .texto_carrito_vacio {
+  color: white;
+  margin: 30px;
+  text-align: center;
+  margin: 200px 0px 295px 0px;
+}
+body main .contenedor_lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+body main .contenedor_lista .articulo_carrito {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  color: white;
+  background-color: grey;
+  padding: 20px 0px;
+  border-radius: 36px;
+  width: 250px;
+}
+body main .contenedor_lista .articulo_carrito .foto_producto {
+  width: 180px;
+  border-radius: 20px;
+}
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre h3,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad h3,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .precio h3,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal h3 {
+  font-size: 20px;
+}
+body main .contenedor_compra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: white;
+  margin-bottom: 50px;
+}
+body main .contenedor_compra .vaciar_carrito {
+  padding: 10px 20px;
+  color: black;
+  background-color: white;
+  border: 0;
+  border-radius: 16px;
+  font-size: 15px;
+}
+body main .contenedor_compra .comprar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 20px;
+  margin: 0px 10px;
+}
+body main .contenedor_compra .comprar .total_de_compra {
+  font-size: 20px;
+  padding: 0px 10px;
+  margin-bottom: 0px;
+  text-align: start;
+}
+body main .contenedor_compra .comprar .boton_comprar {
+  padding: 20px 20px;
+  color: black;
+  background-color: white;
+  border: 0;
+  border-radius: 16px;
+  font-size: 18px;
+}
+body main .mensaje_compra {
+  color: white;
+  margin: 30px;
+}
+body main .ocultar {
+  display: none;
+}
+
+body .index footer,
+body .productos footer,
+body .galeria footer,
+body .nosotros footer,
+body .contacto footer,
+body .carrito footer {
+  background-color: #000;
+}
+body .index footer .container_footer,
+body .productos footer .container_footer,
+body .galeria footer .container_footer,
+body .nosotros footer .container_footer,
+body .contacto footer .container_footer,
+body .carrito footer .container_footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+}
+body .index footer .container_footer .navbar_footer .ul_footer,
+body .productos footer .container_footer .navbar_footer .ul_footer,
+body .galeria footer .container_footer .navbar_footer .ul_footer,
+body .nosotros footer .container_footer .navbar_footer .ul_footer,
+body .contacto footer .container_footer .navbar_footer .ul_footer,
+body .carrito footer .container_footer .navbar_footer .ul_footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: 0.1325rem;
+  padding-left: 0.625rem;
+}
+body .index footer .container_footer .navbar_footer .ul_footer li,
+body .productos footer .container_footer .navbar_footer .ul_footer li,
+body .galeria footer .container_footer .navbar_footer .ul_footer li,
+body .nosotros footer .container_footer .navbar_footer .ul_footer li,
+body .contacto footer .container_footer .navbar_footer .ul_footer li,
+body .carrito footer .container_footer .navbar_footer .ul_footer li {
+  list-style: none;
+}
+body .index footer .container_footer .navbar_footer .ul_footer li a,
+body .productos footer .container_footer .navbar_footer .ul_footer li a,
+body .galeria footer .container_footer .navbar_footer .ul_footer li a,
+body .nosotros footer .container_footer .navbar_footer .ul_footer li a,
+body .contacto footer .container_footer .navbar_footer .ul_footer li a,
+body .carrito footer .container_footer .navbar_footer .ul_footer li a {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body .index footer .container_footer .redes_sociales,
+body .productos footer .container_footer .redes_sociales,
+body .galeria footer .container_footer .redes_sociales,
+body .nosotros footer .container_footer .redes_sociales,
+body .contacto footer .container_footer .redes_sociales,
+body .carrito footer .container_footer .redes_sociales {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: center;
+  gap: 0.625rem;
+  margin-right: 1.25rem;
+}
+body .index footer .container_footer .redes_sociales .redes_footer,
+body .productos footer .container_footer .redes_sociales .redes_footer,
+body .galeria footer .container_footer .redes_sociales .redes_footer,
+body .nosotros footer .container_footer .redes_sociales .redes_footer,
+body .contacto footer .container_footer .redes_sociales .redes_footer,
+body .carrito footer .container_footer .redes_sociales .redes_footer {
+  margin: 0.625rem 0rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+}
+body .index footer .container_footer .redes_sociales .redes_footer a img,
+body .productos footer .container_footer .redes_sociales .redes_footer a img,
+body .galeria footer .container_footer .redes_sociales .redes_footer a img,
+body .nosotros footer .container_footer .redes_sociales .redes_footer a img,
+body .contacto footer .container_footer .redes_sociales .redes_footer a img,
+body .carrito footer .container_footer .redes_sociales .redes_footer a img {
+  width: 2.5rem;
+}
+body .index footer .container_footer .redes_sociales .suscripcion,
+body .productos footer .container_footer .redes_sociales .suscripcion,
+body .galeria footer .container_footer .redes_sociales .suscripcion,
+body .nosotros footer .container_footer .redes_sociales .suscripcion,
+body .contacto footer .container_footer .redes_sociales .suscripcion,
+body .carrito footer .container_footer .redes_sociales .suscripcion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
+  border: 0.0625rem solid #fff;
+  border-radius: 0.625rem;
+  max-width: 9.375rem;
+}
+body .index footer .container_footer .redes_sociales .suscripcion input,
+body .productos footer .container_footer .redes_sociales .suscripcion input,
+body .galeria footer .container_footer .redes_sociales .suscripcion input,
+body .nosotros footer .container_footer .redes_sociales .suscripcion input,
+body .contacto footer .container_footer .redes_sociales .suscripcion input,
+body .carrito footer .container_footer .redes_sociales .suscripcion input {
+  padding: 0.3125rem;
+  margin: 0.3125rem;
+  border: transparent;
+  background-color: transparent;
+  text-align: center;
+  max-width: 8.75rem;
+  color: #fff;
+}
+body .index footer .container_footer .redes_sociales .suscripcion input::placeholder,
+body .productos footer .container_footer .redes_sociales .suscripcion input::placeholder,
+body .galeria footer .container_footer .redes_sociales .suscripcion input::placeholder,
+body .nosotros footer .container_footer .redes_sociales .suscripcion input::placeholder,
+body .contacto footer .container_footer .redes_sociales .suscripcion input::placeholder,
+body .carrito footer .container_footer .redes_sociales .suscripcion input::placeholder {
+  color: #fff;
+}
+body .index footer .container_footer .redes_sociales .suscripcion button,
+body .productos footer .container_footer .redes_sociales .suscripcion button,
+body .galeria footer .container_footer .redes_sociales .suscripcion button,
+body .nosotros footer .container_footer .redes_sociales .suscripcion button,
+body .contacto footer .container_footer .redes_sociales .suscripcion button,
+body .carrito footer .container_footer .redes_sociales .suscripcion button {
+  font-family: "Roboto", sans-serif;
+  padding: 0.6875rem 3.25rem;
+  border: transparent;
+  background-color: #fff;
+  color: #000;
+  border-radius: 0rem 0rem 0.4375rem 0.4375rem;
+}
+
+@media screen and (min-width: 32.4375rem) {
+  body .productos main .container_marcas {
+    margin: 1.875rem 6.9rem;
+  }
+}
+@media screen and (min-width: 48rem) {
+  body .index header .container_header nav .nav-menu .active,
+  body .contacto header .container_header nav .nav-menu .active,
+  body .galeria header .container_header nav .nav-menu .active,
+  body .nosotros header .container_header nav .nav-menu .active,
+  body .productos header .container_header nav .nav-menu .active,
+  body .carrito header .container_header nav .nav-menu .active {
+    box-shadow: 0rem 0rem 0.625rem #fff;
+    border-radius: 0.3125rem;
+  }
+  body .index footer .container_footer,
+  body .contacto footer .container_footer,
+  body .galeria footer .container_footer,
+  body .nosotros footer .container_footer,
+  body .productos footer .container_footer,
+  body .carrito footer .container_footer {
+    margin-top: 3rem;
+  }
+  body .index footer .container_footer .redes_sociales,
+  body .contacto footer .container_footer .redes_sociales,
+  body .galeria footer .container_footer .redes_sociales,
+  body .nosotros footer .container_footer .redes_sociales,
+  body .productos footer .container_footer .redes_sociales,
+  body .carrito footer .container_footer .redes_sociales {
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+  body .index footer .container_footer .redes_sociales .redes_footer,
+  body .contacto footer .container_footer .redes_sociales .redes_footer,
+  body .galeria footer .container_footer .redes_sociales .redes_footer,
+  body .nosotros footer .container_footer .redes_sociales .redes_footer,
+  body .productos footer .container_footer .redes_sociales .redes_footer,
+  body .carrito footer .container_footer .redes_sociales .redes_footer {
+    gap: 0.625rem;
+  }
+  body .index footer .container_footer .redes_sociales .suscripcion,
+  body .contacto footer .container_footer .redes_sociales .suscripcion,
+  body .galeria footer .container_footer .redes_sociales .suscripcion,
+  body .nosotros footer .container_footer .redes_sociales .suscripcion,
+  body .productos footer .container_footer .redes_sociales .suscripcion,
+  body .carrito footer .container_footer .redes_sociales .suscripcion {
+    flex-direction: row;
+    margin-right: 7.5rem;
+    gap: 0.3125rem;
+  }
+  body .index footer .container_footer .redes_sociales .suscripcion input,
+  body .contacto footer .container_footer .redes_sociales .suscripcion input,
+  body .galeria footer .container_footer .redes_sociales .suscripcion input,
+  body .nosotros footer .container_footer .redes_sociales .suscripcion input,
+  body .productos footer .container_footer .redes_sociales .suscripcion input,
+  body .carrito footer .container_footer .redes_sociales .suscripcion input {
+    padding: 0rem;
+    border: transparent;
+    background-color: transparent;
+    text-align: center;
+    max-width: 8.75rem;
+  }
+  body .index footer .container_footer .redes_sociales .suscripcion button,
+  body .contacto footer .container_footer .redes_sociales .suscripcion button,
+  body .galeria footer .container_footer .redes_sociales .suscripcion button,
+  body .nosotros footer .container_footer .redes_sociales .suscripcion button,
+  body .productos footer .container_footer .redes_sociales .suscripcion button,
+  body .carrito footer .container_footer .redes_sociales .suscripcion button {
+    border-radius: 0.4375rem;
+    padding: 0.6875rem 2.1875rem;
+  }
+  body .contacto .main_contacto .redes_contacto {
+    margin: 2.5rem 0rem 3.5rem 0rem;
+  }
+  body .contacto .main_contacto .container_formulario .formulario_contacto {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 56.25rem) {
+  body .index main .container_categorias,
+  body .carrito main .container_categorias {
+    flex-direction: row;
+  }
+  body .index main .container_categorias .categoria_yerbas,
+  body .index main .container_categorias .categoria_mates,
+  body .index main .container_categorias .categoria_accesorios,
+  body .carrito main .container_categorias .categoria_yerbas,
+  body .carrito main .container_categorias .categoria_mates,
+  body .carrito main .container_categorias .categoria_accesorios {
+    justify-content: center;
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+  }
+  body .contacto .main_contacto .mapa {
+    width: 600px;
+  }
+  body .main_carrito .contenedor_lista {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 64rem) {
+  body .index header .container_header nav .bar-btn,
+  body .contacto header .container_header nav .bar-btn,
+  body .nosotros header .container_header nav .bar-btn,
+  body .productos header .container_header nav .bar-btn,
+  body .galeria header .container_header nav .bar-btn,
+  body .carrito header .container_header nav .bar-btn {
+    display: none;
+  }
+  body .index header .container_header nav .nav-menu,
+  body .contacto header .container_header nav .nav-menu,
+  body .nosotros header .container_header nav .nav-menu,
+  body .productos header .container_header nav .nav-menu,
+  body .galeria header .container_header nav .nav-menu,
+  body .carrito header .container_header nav .nav-menu {
+    position: relative;
+    height: 6.25rem;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 3.25rem;
+    margin-bottom: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+  }
+  body .index header .container_header nav .nav-menu li,
+  body .contacto header .container_header nav .nav-menu li,
+  body .nosotros header .container_header nav .nav-menu li,
+  body .productos header .container_header nav .nav-menu li,
+  body .galeria header .container_header nav .nav-menu li,
+  body .carrito header .container_header nav .nav-menu li {
+    display: inline-block;
+    line-height: 6.25rem;
+    margin: 0;
+    transition: none;
+  }
+  body .index header .container_header nav .nav-menu li a,
+  body .contacto header .container_header nav .nav-menu li a,
+  body .nosotros header .container_header nav .nav-menu li a,
+  body .productos header .container_header nav .nav-menu li a,
+  body .galeria header .container_header nav .nav-menu li a,
+  body .carrito header .container_header nav .nav-menu li a {
+    font-size: 1.25rem;
+    padding: 0rem 0.625rem;
+    color: #fff;
+  }
+  body .index header .container_header nav .nav-menu li .contenedor_carrito .carrito-blanco,
+  body .contacto header .container_header nav .nav-menu li .contenedor_carrito .carrito-blanco,
+  body .nosotros header .container_header nav .nav-menu li .contenedor_carrito .carrito-blanco,
+  body .productos header .container_header nav .nav-menu li .contenedor_carrito .carrito-blanco,
+  body .galeria header .container_header nav .nav-menu li .contenedor_carrito .carrito-blanco,
+  body .carrito header .container_header nav .nav-menu li .contenedor_carrito .carrito-blanco {
+    display: block;
+    position: absolute;
+    top: 33px;
+    right: 44px;
+    z-index: 100;
+  }
+  body .index .main_carrito .contenedor_lista,
+  body .contacto .main_carrito .contenedor_lista,
+  body .nosotros .main_carrito .contenedor_lista,
+  body .productos .main_carrito .contenedor_lista,
+  body .galeria .main_carrito .contenedor_lista,
+  body .carrito .main_carrito .contenedor_lista {
+    flex-direction: column;
+  }
+  body .index .main_carrito .contenedor_lista .articulo_carrito,
+  body .contacto .main_carrito .contenedor_lista .articulo_carrito,
+  body .nosotros .main_carrito .contenedor_lista .articulo_carrito,
+  body .productos .main_carrito .contenedor_lista .articulo_carrito,
+  body .galeria .main_carrito .contenedor_lista .articulo_carrito,
+  body .carrito .main_carrito .contenedor_lista .articulo_carrito {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 850px;
+  }
+  body .index .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion,
+  body .contacto .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion,
+  body .nosotros .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion,
+  body .productos .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion,
+  body .galeria .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion,
+  body .carrito .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 80px;
+  }
+  body .index .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
+  body .index .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
+  body .index .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
+  body .index .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal,
+  body .contacto .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
+  body .contacto .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
+  body .contacto .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
+  body .contacto .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal,
+  body .nosotros .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
+  body .nosotros .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
+  body .nosotros .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
+  body .nosotros .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal,
+  body .productos .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
+  body .productos .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
+  body .productos .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
+  body .productos .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal,
+  body .galeria .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
+  body .galeria .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
+  body .galeria .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
+  body .galeria .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal,
+  body .carrito .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
+  body .carrito .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
+  body .carrito .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
+  body .carrito .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal {
+    flex-direction: column;
+  }
+  body .index .main_carrito .contenedor_compra,
+  body .contacto .main_carrito .contenedor_compra,
+  body .nosotros .main_carrito .contenedor_compra,
+  body .productos .main_carrito .contenedor_compra,
+  body .galeria .main_carrito .contenedor_compra,
+  body .carrito .main_carrito .contenedor_compra {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body .index .main_contacto .mail_ubicacion .email,
+  body .contacto .main_contacto .mail_ubicacion .email,
+  body .nosotros .main_contacto .mail_ubicacion .email,
+  body .productos .main_contacto .mail_ubicacion .email,
+  body .galeria .main_contacto .mail_ubicacion .email,
+  body .carrito .main_contacto .mail_ubicacion .email {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1.25rem;
+  }
+  body .index .main_contacto .mail_ubicacion .email p,
+  body .contacto .main_contacto .mail_ubicacion .email p,
+  body .nosotros .main_contacto .mail_ubicacion .email p,
+  body .productos .main_contacto .mail_ubicacion .email p,
+  body .galeria .main_contacto .mail_ubicacion .email p,
+  body .carrito .main_contacto .mail_ubicacion .email p {
+    margin-bottom: 0rem;
+  }
+  body .index .main_contacto .mail_ubicacion .ubicacion,
+  body .contacto .main_contacto .mail_ubicacion .ubicacion,
+  body .nosotros .main_contacto .mail_ubicacion .ubicacion,
+  body .productos .main_contacto .mail_ubicacion .ubicacion,
+  body .galeria .main_contacto .mail_ubicacion .ubicacion,
+  body .carrito .main_contacto .mail_ubicacion .ubicacion {
+    flex-direction: row;
+    align-items: center;
+  }
+  body .index .main_contacto .mail_ubicacion .ubicacion p,
+  body .contacto .main_contacto .mail_ubicacion .ubicacion p,
+  body .nosotros .main_contacto .mail_ubicacion .ubicacion p,
+  body .productos .main_contacto .mail_ubicacion .ubicacion p,
+  body .galeria .main_contacto .mail_ubicacion .ubicacion p,
+  body .carrito .main_contacto .mail_ubicacion .ubicacion p {
+    margin-bottom: 0rem;
+  }
+  body .index .main_contacto .mapa,
+  body .contacto .main_contacto .mapa,
+  body .nosotros .main_contacto .mapa,
+  body .productos .main_contacto .mapa,
+  body .galeria .main_contacto .mapa,
+  body .carrito .main_contacto .mapa {
+    width: 800px;
+  }
+}
+
+/* MODO OSCURO */
+
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/* Modo claro */
+
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Modo oscuro */
+
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Estilos específicos para el modo oscuro */
+
+.dark a {
+  color: #ffffff;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #ffffff;
+}
+
+.dark p, .dark ul, .dark ol, .dark table, .dark blockquote {
+  color: #ffffff;
+}
+body .index header .container_header,
+body .productos header .container_header,
+body .galeria header .container_header,
+body .nosotros header .container_header,
+body .contacto header .container_header,
+body .carrito header .container_header {
+  width: 100%;
+  height: 6.25rem;
+  background-color: #000000;
+  align-items: center;
+  position: relative;
+  z-index: 100000;}
+
+/*# sourceMappingURL=style.css.map */
